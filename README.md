@@ -1,16 +1,63 @@
-# React + Vite
+📺 TechStore TV Catalog — Итерация 1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Статическая страница каталога телевизоров с современным дизайном, каруселью изображений, избранным и корзиной (счётчик на карточке).
 
-Currently, two official plugins are available:
+🚀 Технологии
+React 18 + Vite — быстрая сборка и разработка
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+CSS Modules — изолированные стили для каждого компонента
 
-## React Compiler
+React Icons — красивые иконки
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Flexbox/Grid — адаптивная вёрстка
 
-## Expanding the ESLint configuration
+📦 Установка и запуск
+bash
+# Клонировать репозиторий
+git clone <your-repo-url>
+cd techstore-tv
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Установить зависимости
+npm install
+
+# Запустить dev-сервер
+npm run dev
+Приложение будет доступно по адресу http://localhost:5173
+
+🎯 Функциональность (Итерация 1)
+Реализовано:
+✅ Sidebar слева, основная область справа — классический e-commerce layout
+
+✅ Sticky header — хедер прилипает при скролле
+
+✅ Footer с 4 колонками — About, Support, Legal, Newsletter
+
+✅ Счётчик товаров — отображает количество телевизоров (8 шт.)
+
+✅ Дропдаун сортировки — визуально присутствует (без логики)
+
+✅ Сетка карточек — адаптивная грид-сетка (1→2→3→4 колонки)
+
+✅ ProductCard с каруселью:
+
+Стрелки навигации появляются при наведении
+
+Индикатор количества фото
+
+Клик по стрелкам меняет изображение
+
+✅ Бейдж "Special Offer" — отображается для товаров с флагом isSpecialOffer
+
+✅ Кнопка избранного (сердечко) — переключение состояния (локально)
+
+✅ Add to Cart счётчик:
+
+При первом клике кнопка меняется на счётчик
+
+Кнопки - и + увеличивают/уменьшают количество
+
+При 0 возвращается исходная кнопка
+
+✅ Адаптивная вёрстка — корректно отображается на мобильных устройствах
+
+✅ Footer прижат к низу — даже при коротком содержимом
