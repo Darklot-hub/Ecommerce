@@ -12,20 +12,28 @@ React Icons — красивые иконки
 Flexbox/Grid — адаптивная вёрстка
 
 📦 Установка и запуск
+
 bash
+
 Клонировать репозиторий
+
 git clone <your-repo-url>
 cd techstore-tv
 
 Установить зависимости
+
 npm install
 
 Запустить dev-сервер
+
 npm run dev
+
 Приложение будет доступно по адресу http://localhost:5173
 
 🎯 Функциональность (Итерация 1)
+
 Реализовано:
+
 ✅ Sidebar слева, основная область справа — классический e-commerce layout
 
 ✅ Sticky header — хедер прилипает при скролле
