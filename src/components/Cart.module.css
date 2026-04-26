@@ -1,0 +1,119 @@
+.cartContainer {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+.emptyCart {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.continueBtn,
+.backBtn {
+  background: var(--accent-gradient);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.cartContent {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.itemsList {
+  flex: 2;
+  min-width: 280px;
+}
+.cartItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+.itemImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+.itemDetails {
+  flex: 2;
+}
+.itemBrand {
+  font-size: 0.8rem;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+}
+.itemModel {
+  font-weight: 600;
+}
+.itemQuantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f1f5f9;
+  padding: 0.25rem;
+  border-radius: var(--radius-md);
+}
+.itemQuantity button {
+  background: white;
+  border: 1px solid #cbd5e1;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.itemTotal {
+  font-weight: 700;
+  min-width: 80px;
+  text-align: right;
+}
+.removeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ef4444;
+}
+.orderSummary {
+  flex: 1;
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  height: fit-content;
+}
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.totalRow {
+  font-weight: 800;
+  font-size: 1.2rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+}
+.checkoutBtn {
+  width: 100%;
+  background: var(--accent-gradient);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.backBtn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,15 @@
+.listingLayout {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1;
+}
+.productsArea {
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 768px) {
+  .listingLayout {
+    flex-direction: column;
+  }
+}

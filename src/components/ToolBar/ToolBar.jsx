@@ -1,6 +1,6 @@
-import styles from "./Toolbar.module.css";
+import styles from "./ToolBar.module.css";
 
-function Toolbar({ productCount }) {
+function Toolbar({ productCount, sortType, onSortChange }) {
   return (
     <div className={styles.toolbar}>
       <div className={styles.productCount}>
@@ -8,9 +8,13 @@ function Toolbar({ productCount }) {
       </div>
       <div className={styles.sortWrapper}>
         <label>Sort by:</label>
-        <select className={styles.sortSelect}>
-          <option>Price: High to Low</option>
-          <option>Price: Low to High</option>
+        <select
+          className={styles.sortSelect}
+          value={sortType}
+          onChange={(e) => onSortChange(e.target.value)}
+        >
+          <option value="lowToHigh">Price: Low to High</option>
+          <option value="highToLow">Price: High to Low</option>
         </select>
       </div>
     </div>

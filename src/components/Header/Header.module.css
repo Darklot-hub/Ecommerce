@@ -30,8 +30,13 @@
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 .logo {
@@ -135,15 +140,28 @@
     flex-wrap: wrap;
     padding: 0.8rem 1rem;
   }
-  
+
   .navTabs {
     order: 3;
     width: 100%;
     justify-content: center;
   }
-  
+
   .tab {
     padding: 0.4rem 1rem;
     font-size: 0.8rem;
   }
+}
+
+.logoBtn {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
