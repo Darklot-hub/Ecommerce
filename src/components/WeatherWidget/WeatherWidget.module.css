@@ -1,0 +1,107 @@
+.widget {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: var(--shadow-md);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+.closeBtn:hover {
+  color: var(--danger);
+}
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.skeletonLine {
+  height: 20px;
+  background: linear-gradient(90deg, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+.skeletonLineShort {
+  width: 50%;
+  height: 20px;
+  background: linear-gradient(90deg, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+}
+.button {
+  background: var(--accent-gradient);
+  color: white;
+  border: none;
+  padding: 0 0.8rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+}
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.error {
+  font-size: 0.75rem;
+  color: var(--danger);
+  margin: 0.25rem 0;
+}
+.weatherInfo {
+  margin-top: 0.75rem;
+}
+.weatherCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.temp {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+.city {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.desc {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
