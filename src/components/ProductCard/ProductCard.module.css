@@ -294,3 +294,20 @@
     font-size: 0.7rem;
   }
 }
+
+.specialBadgeOverlay {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, var(--danger) 0%, #dc2626 100%);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 3;
+  box-shadow: var(--shadow-sm);
+  animation: pulse 2s infinite;
+}

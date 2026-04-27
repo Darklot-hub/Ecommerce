@@ -2,7 +2,7 @@ import styles from "./Home.module.css";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Sidebar from "../components/Sidebar/Sidebar";
-import Toolbar from "../components/ToolBar/ToolBar";
+import Toolbar from "../components/ToolBar/Toolbar";
 import ProductGrid from "../components/ProductGrid/ProductGrid";
 import { products } from "../data/products";
 

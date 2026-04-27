@@ -40,12 +40,13 @@ function ProductCard({ product }) {
             </div>
           </>
         )}
+        {product.isSpecialOffer && (
+          <div className={styles.specialBadgeOverlay}>Special Offer</div>
+        )}
       </div>
 
       <div className={styles.cardBody}>
-        {product.isSpecialOffer && (
-          <div className={styles.specialBadge}>Special Offer</div>
-        )}
+        {/* Строка ниже удалена, бейдж больше не здесь */}
         <div className={styles.brand}>{product.make}</div>
         <div className={styles.model}>{product.model}</div>
         <div className={styles.price}>${product.price.toLocaleString()}</div>

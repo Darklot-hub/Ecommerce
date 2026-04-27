@@ -1,4 +1,4 @@
-import styles from "./ToolBar.module.css";
+import styles from "./Toolbar.module.css";
 
 function Toolbar({ productCount }) {
   return (
